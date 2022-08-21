@@ -3,3 +3,6 @@
 ################################################################################
 
 /SalesTaxes/.vs/SalesTaxes
+/SalesTaxes/SalesTaxes.WebAPI/bin/Debug/net6.0
+/SalesTaxes/SalesTaxes.WebAPI/obj
+/SalesTaxes/SalesTaxes.WebUI/obj/Debug
