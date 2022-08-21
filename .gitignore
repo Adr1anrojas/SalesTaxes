@@ -6,3 +6,7 @@
 /SalesTaxes/SalesTaxes.WebAPI/bin/Debug/net6.0
 /SalesTaxes/SalesTaxes.WebAPI/obj
 /SalesTaxes/SalesTaxes.WebUI/obj/Debug
+/SalesTaxes/.vs/ProjectEvaluation
+/SalesTaxes/SalesTaxes.Application/obj
+/SalesTaxes/SalesTaxes.Domain/obj
+/SalesTaxes/SalesTaxes.Infrastructure/obj
