@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SalesTaxes.Application\SalesTaxes.Application.csproj" />
+    <ProjectReference Include="..\SalesTaxes.Infrastructure\SalesTaxes.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
