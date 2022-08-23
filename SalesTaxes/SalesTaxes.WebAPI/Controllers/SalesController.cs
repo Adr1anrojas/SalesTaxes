@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SalesTaxes.Application.Sales.Commands;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -6,38 +7,14 @@ namespace SalesTaxes.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SalesController : ControllerBase
+    public class SalesController : ApiControllerBase
     {
-        // GET: api/<SalesController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<SalesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST api/<SalesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<ReceiptDto>> Post([FromBody] CreateSalesCommand command)
         {
-        }
-
-        // PUT api/<SalesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<SalesController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return await Mediator.Send(command);
         }
     }
 }

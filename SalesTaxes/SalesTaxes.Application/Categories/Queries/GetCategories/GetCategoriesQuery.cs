@@ -1,37 +1,25 @@
 ﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
+using SalesTaxes.Application.Common.Interfaces;
 
 namespace SalesTaxes.Application.Categories.Queries.GetCategories
 {
-    public record GetCategoriesQuery : IRequest<IEnumerable<Category>>;
+    public record GetCategoriesQuery : IRequest<List<Category>>;
 
-    public class GetCategoriesQueryHandler: RequestHandler<GetCategoriesQuery, IEnumerable<Category>>
+    public class GetCategoriesQueryHandler: IRequestHandler<GetCategoriesQuery, List<Category>>
     {
-        private List<Category> categories = new List<Category>() 
-        { 
-            new Category()
-            {
-                Id = 1,
-                Name = "General"
-            },
-            new Category()
-            {
-                Id = 2,
-                Name = "Book"
-            },
-            new Category()
-            {
-                Id = 3,
-                Name = "Food"
-            },
-            new Category()
-            {
-                Id = 4,
-                Name = "Medical"
-            }
-        };
-        protected override IEnumerable<Category> Handle(GetCategoriesQuery request)
+        private readonly IApplicationDbContext _context;
+
+        public GetCategoriesQueryHandler(IApplicationDbContext context)
         {
-            return this.categories;
+            _context = context;
+        }
+        public async Task<List<Category>> Handle(GetCategoriesQuery request, CancellationToken cancellationToken)
+        {
+            var categories = await _context.Categories.ToListAsync(cancellationToken);
+            return categories
+                .Select(c => new Category() { Id = c.Id, Name = c.Name })
+                .ToList();
         }
     }
 }

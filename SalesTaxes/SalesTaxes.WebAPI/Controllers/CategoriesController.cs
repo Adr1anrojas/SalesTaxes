@@ -11,7 +11,7 @@ namespace SalesTaxes.WebAPI.Controllers
     public class CategoriesController : ApiControllerBase
     {
         [HttpGet]
-        public async Task<IEnumerable<Category>> Get()
+        public async Task<ActionResult<List<Category>>> Get()
         {
             return await Mediator.Send(new GetCategoriesQuery());
         }
