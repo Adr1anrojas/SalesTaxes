@@ -14,6 +14,9 @@ namespace SalesTaxes.WebAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<ReceiptDto>> Post([FromBody] CreateSalesCommand command)
         {
+            if (command is null || !command.Items.Any())
+                return BadRequest();
+
             return await Mediator.Send(command);
         }
     }

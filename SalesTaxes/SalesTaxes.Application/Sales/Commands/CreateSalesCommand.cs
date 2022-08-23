@@ -1,7 +1,6 @@
 ﻿using MediatR;
 using SalesTaxes.Application.Common.Interfaces;
 using SalesTaxes.Domain.Entities;
-using System.ComponentModel.DataAnnotations;
 
 namespace SalesTaxes.Application.Sales.Commands
 {
