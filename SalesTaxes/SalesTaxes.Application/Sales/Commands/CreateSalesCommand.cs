@@ -34,7 +34,9 @@ namespace SalesTaxes.Application.Sales.Commands
                     FinalPrice = s.GetTotal(),
                     IdReceiptNavigation = receipt
                 }).ToList();
+
             _context.ItemReceipts.AddRange(itemReceipts);
+
             await _context.SaveChangesAsync(cancellationToken);
 
             var items = itemReceipts.Select(s =>
