@@ -24,9 +24,10 @@ In this case I chose to create an API that implements the CQRS and Mediator desi
 
 <p align="center">
   <img src="https://miro.medium.com/max/698/1*2k3di0WZPrlYoVsGfiLs_Q.png" />
+  <img src="https://user-images.githubusercontent.com/43327484/186328167-58ec6a5d-e6c5-4d65-b558-921dd1f41ac4.png" />
 </p>
 
-<h4>Techologies used:<h4/>
+<h4>Techologies used:</h4>
 
 <ul>
   <li>.NET 6</li>
@@ -34,8 +35,18 @@ In this case I chose to create an API that implements the CQRS and Mediator desi
   <li>SQL Server</li>
 </ul>
 
-<h4>Note: to run this proyect you only need to restore your packages</h4>
+Note: to run this proyect you only need to restore your packages.
+  
 
+You will find swagger running at this URL: https://localhost:5001/swagger/index.html
+  
+  
+Swagger contains examples to test with different data inputs.
+  
+
+![image](https://user-images.githubusercontent.com/43327484/186327381-6f4e4e55-6f66-4d24-a28c-be18172723da.png)
+
+  
 
 
 
