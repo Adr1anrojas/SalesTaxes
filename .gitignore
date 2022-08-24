@@ -13,3 +13,5 @@
 /SalesTaxes/SalesTaxes.Application/bin/Debug/net6.0
 /SalesTaxes/SalesTaxes.Domain/bin/Debug/net6.0
 /SalesTaxes/SalesTaxes.Infrastructure/bin/Debug/net6.0
+/SalesTaxes/SalesTaxes.Application.Tests/bin/Debug/net6.0
+/SalesTaxes/SalesTaxes.Application.Tests/obj

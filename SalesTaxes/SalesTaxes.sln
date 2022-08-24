@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesTaxes.Domain", "SalesT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesTaxes.Infrastructure", "SalesTaxes.Infrastructure\SalesTaxes.Infrastructure.csproj", "{B2230752-ADB3-426B-B98B-8FE053E299C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesTaxes.Application.Tests", "SalesTaxes.Application.Tests\SalesTaxes.Application.Tests.csproj", "{08E97E8D-5F3E-4F7D-92CF-42EC20B3C423}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{B2230752-ADB3-426B-B98B-8FE053E299C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2230752-ADB3-426B-B98B-8FE053E299C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2230752-ADB3-426B-B98B-8FE053E299C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E97E8D-5F3E-4F7D-92CF-42EC20B3C423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E97E8D-5F3E-4F7D-92CF-42EC20B3C423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E97E8D-5F3E-4F7D-92CF-42EC20B3C423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E97E8D-5F3E-4F7D-92CF-42EC20B3C423}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{04B9F45A-1551-4242-ADDE-715E60C8C370} = {FBC716E5-BC70-40A0-852E-AB3490144911}
 		{46104DB2-66B5-4C7E-AC12-600AB649A115} = {FBC716E5-BC70-40A0-852E-AB3490144911}
 		{B2230752-ADB3-426B-B98B-8FE053E299C6} = {FBC716E5-BC70-40A0-852E-AB3490144911}
+		{08E97E8D-5F3E-4F7D-92CF-42EC20B3C423} = {3D1D1592-FB2D-4397-BBE5-DA43116CB449}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {837BC79B-A1CB-47B5-816F-08D65243E477}
