@@ -10,6 +10,7 @@
     public class ItemDto
     {
         public int IdReceipt { get; set; }
+        public string Name { get; set; }
         public int IdItem { get; set; }
         public int Quantity { get; set; }
         public bool IsImported { get; set; }

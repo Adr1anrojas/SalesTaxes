@@ -5,6 +5,7 @@
         public int Id { get; set; }
         public int IdReceipt { get; set; }
         public int IdItem { get; set; }
+        public string ItemName { get; set; }
         public int Quantity { get; set; }
         public bool IsImported { get; set; }
         public decimal FinalPrice { get; set; }

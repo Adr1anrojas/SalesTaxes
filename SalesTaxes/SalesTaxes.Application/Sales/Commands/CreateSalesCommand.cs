@@ -29,6 +29,7 @@ namespace SalesTaxes.Application.Sales.Commands
             var itemReceipts = request.Items.Select(s => new ItemReceipt()
                 {
                     IdItem = s.Id,
+                    ItemName = s.Name,
                     Quantity = s.Quantity,
                     IsImported = s.IsImported,
                     FinalPrice = s.GetTotal(),
@@ -43,6 +44,7 @@ namespace SalesTaxes.Application.Sales.Commands
                 new ItemDto()
                 {
                     IdItem = s.IdItem,
+                    Name = s.ItemName,
                     Quantity = s.Quantity,
                     IsImported = s.IsImported,
                     FinalPrice = s.FinalPrice,
